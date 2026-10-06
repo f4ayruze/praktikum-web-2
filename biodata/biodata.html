@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri | Portofolio</title>
+    <!-- MENGHUBUNGKAN KE FILE CSS -->
+    <link rel="stylesheet" href="biodata.css">
+    
+    <!-- Font Awesome untuk ikon sosial media dan ikon profil -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGASI -->
+    <nav class="navbar">
+        <div class="logo">MY</div>
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil Lengkap</a></li>
+            <li><a href="#hobi">Hobi</a></li>
+        </ul>
+    </nav>
+
+    <!-- BAGIAN BERANDA (HERO SECTION) -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h3>Halo, perkenalkan saya</h3>
+                
+                <!-- 
+                  ===================================================
+                  UBAH NAMA DI SINI (Baris 33) 
+                  Ganti "John Doe" dengan nama Anda.
+                  ===================================================
+                -->
+                <h1 class="nama">Syuja Ridhwan Fairuz Zahran</h1>
+                
+                <!-- 
+                  ===================================================
+                  UBAH STATUS / PEKERJAAN DI SINI (Baris 40)
+                  Contoh: Mahasiswa D4 Elektromedis, atau Web Developer
+                  ===================================================
+                -->
+                <h2 class="status">Mahasiswa D4 Elektromedis</h2>
+                
+                <!-- 
+                  ===================================================
+                  UBAH DESKRIPSI SINGKAT DI SINI (Baris 47)
+                  ===================================================
+                -->
+                <p>someone who interest for all technologys thing instead of AI</p>
+                
+                <div class="social-icons">
+                    <!-- 
+                      ===================================================
+                      UBAH LINK SOSIAL MEDIA DI BAWAH INI (Baris 54-56)
+                      Ganti tanda "#" dengan link asli Instagram/Github Anda
+                      ===================================================
+                    -->
+                    <a href="https://www.instagram.com/ridhwan14.fairuz/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/f4ayruze" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-img">
+                <!-- 
+                  ===================================================
+                  UBAH FOTO PROFIL DI SINI (Baris 67)
+                  Ganti link di dalam src="..." dengan nama file foto Anda (misal: "foto_saya.jpg")
+                  Pastikan fotonya ada di folder yang sama.
+                  ===================================================
+                -->
+                <img src="Foto_Diri.jpeg" alt="Foto Profil" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN PROFIL LENGKAP -->
+    <section id="profil" class="profil-section">
+        <h2 class="section-title">Profil Lengkap</h2>
+        <div class="profil-container">
+            <div class="profil-card">
+                <ul>
+                    <!-- 
+                      ===================================================
+                      UBAH DATA DIRI ANDA DI BAWAH INI (Baris 82-87)
+                      ===================================================
+                    -->
+                    <li><strong><i class="fas fa-user"></i> Nama Lengkap:</strong> Syuja Ridhwan Fairuz Zahran</li>
+                    <li><strong><i class="fas fa-calendar-alt"></i> Tempat, Tanggal Lahir:</strong> Wonogiri, 14 Oktober 2003</li>
+                    <li><strong><i class="fas fa-map-marker-alt"></i> Alamat:</strong> Jl. Mawar No. 10, Wonogiri</li>
+                    <li><strong><i class="fas fa-envelope"></i> Email:</strong> ridhwanfairuz36@gmail.com</li>
+                    <li><strong><i class="fas fa-graduation-cap"></i> Pendidikan Saat Ini:</strong> Universitas Muhammadiyah PKU Surakarta</li>
+                    <li><strong><i class="fas fa-heart"></i> Status:</strong> Mahasiswa Aktif</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN HOBI -->
+    <section id="hobi" class="hobi-section">
+        <h2 class="section-title">Hobi & Minat</h2>
+        <div class="hobi-container">
+            
+            <!-- HOBI 1 -->
+            <div class="hobi-card">
+                <!-- Anda bisa mengganti ikon dengan mencari nama ikon di fontawesome.com -->
+                <i class="fas fa-laptop-code hobi-icon"></i>
+                
+                <!-- UBAH HOBI 1 (Baris 107) -->
+                <h3>IT tech</h3>
+                <p>Menghabiskan waktu untuk mempelajari hal baru terkait pemrograman dan teknologi.</p>
+            </div>
+
+            <!-- HOBI 2 -->
+            <div class="hobi-card">
+                <i class="fas fa-camera hobi-icon"></i>
+                
+                <!-- UBAH HOBI 2 (Baris 116) -->
+                <h3>Fotografi</h3>
+                <p>mengabadikan momen yang tidak terulang</p>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- UBAH TEKS FOOTER DI SINI (Baris 136) -->
+        <p>&copy; 2026 Syuja Ridhwan Fairuz Zahran | Praktikum Pemrograman Web</p>
+    </footer>
+
+    <!-- SCRIPT JS UNTUK EFEK ANIMASI KETIKA DI-SCROLL -->
+    <script>
+        // Efek transisi halus (fade in & slide up) ketika elemen terlihat di layar
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.profil-card, .hobi-card');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
